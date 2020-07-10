@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">sample</string>
+    <string name="HRM">HRM</string>
+    <string name="login">दर्ज करे</string>
+    <string name="signup">शामिल करें</string>
+    <string-array name = "job_profile">
+        <item>काम चुने</item>
+        <item>राज मिस्त्री</item>
+        <item>प्लम्बर</item>
+        <item>बिजली का काम</item>
+        <item> लेबर</item>
+        <item>लकड़ी का काम </item>
+        <item>पेंटर</item>
+        <item>वेल्डर</item>
+    </string-array>
+    <string-array name = "experience">
+        <item>अनुभव</item>
+        <item>नूतन</item>
+        <item>1-2 साल</item>
+        <item>2-5 साल</item>
+        <item>5-10 साल</item>
+        <item>10+ साल</item>
+    </string-array>
+    <string-array name = "gender">
+        <item>लिंग</item>
+        <item>महिला</item>
+        <item>पुरुष</item>
+    </string-array>
+</resources>
