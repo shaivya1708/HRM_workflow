@@ -19,15 +19,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               String number = editText.getText().toString().trim();
+                String number = editText.getText().toString().trim();
 
                 if (number.isEmpty()) {
-                   editText.setError("Field Empty");
-                   editText.requestFocus();
+                    editText.setError("Field Empty");
+                    editText.requestFocus();
                     return;
                 }
                 if (number.length() != 10) {
-                  editText.setError("Valid number is required");
+                    editText.setError("Valid number is required");
                     editText.requestFocus();
                     return;
                 }
@@ -43,8 +43,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-   protected void onStart() {
-       super.onStart();
+    protected void onStart() {
+        super.onStart();
 
         if (FirebaseAuth.getInstance().getCurrentUser() != null) {
             Intent intent = new Intent(this, ProfileActivity.class);
