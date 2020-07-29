@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "873140696437",
+    "firebase_url": "https://hrmworkflow.firebaseio.com",
+    "project_id": "hrmworkflow",
+    "storage_bucket": "hrmworkflow.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873140696437:android:f02342df91c836a490cf3c",
+        "android_client_info": {
+          "package_name": "com.example.android.hrm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "873140696437-k4ocsqnopv8soq9mkvaffh6htko3sv9c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.hrm",
+            "certificate_hash": "65b4a4c07f40cd2c7607c9464d6702fba13529ac"
+          }
+        },
+        {
+          "client_id": "873140696437-q4eo01rt0is9t53584otmcmsf26q5hiu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC63hdInr2Qmv_w-Xt7S1-k-Z-niLJdcaY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "873140696437-q4eo01rt0is9t53584otmcmsf26q5hiu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
