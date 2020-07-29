@@ -5,7 +5,7 @@
     android:background="#EFB56E">
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/button5"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -16,19 +16,6 @@
         android:text="कर्मचारी के रूप में पंजीकृत करें"
         android:textColor="@android:color/black"
         android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="500dp"
-        android:background="@drawable/rounded_button"
-        android:text="नियोक्ता के रूप में पंजीकरण करें"
-        android:textColor="@android:color/black"
-        android:textSize="25dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName1"

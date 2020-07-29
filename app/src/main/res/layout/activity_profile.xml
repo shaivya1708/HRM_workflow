@@ -1,35 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+
     android:background="#8AD3F6"
-    tools:context=".ProfileActivity">
-
-
-    <Button
-        android:id="@+id/buttonLogout"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="145dp"
-        android:layout_marginLeft="145dp"
-        android:layout_marginTop="281dp"
-        android:layout_marginEnd="146dp"
-        android:layout_marginRight="146dp"
-        android:background="@color/colorPrimary"
-        android:text="बाहर जाएं"
-        android:textAllCaps="false"
-        android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuTextView4" />
-
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:id="@+id/layour_profile"
+    tools:context=".ProfileActivity"
+    app:layout_constraintBottom_toBottomOf="parent">
     <ImageView
         android:id="@+id/contactssnap4"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
+
         android:layout_marginStart="155dp"
         android:layout_marginLeft="155dp"
         android:layout_marginTop="50dp"
@@ -39,91 +27,41 @@
         android:src="@drawable/humans"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/menuTextView4"
-        android:layout_width="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginStart="73dp"
-        android:layout_marginLeft="73dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="73dp"
-        android:layout_marginRight="73dp"
-        android:text="आपका स्वागत है"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="40sp"
-        android:textStyle="bold"
+        android:layout_gravity="fill_vertical"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="145dp"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="146dp"
+        android:background="@color/colorPrimary"
+        android:text="बाहर जाएं"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contactssnap4" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/layour_profile" />
+    <Button
+        android:id="@+id/showprofile"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="182dp"
-        android:layout_marginLeft="182dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="183dp"
-        android:layout_marginRight="183dp"
-        android:fontFamily="sans-serif-black"
-        android:text="Name"
-        android:textColor="#0E0E0E"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menuTextView4" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="185dp"
-        android:layout_marginLeft="185dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginRight="185dp"
-        android:text="Phone"
-        android:textColor="#050505"
-        android:textSize="18sp"
+        android:layout_marginStart="145dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginRight="146dp"
+        android:background="#4CAF50"
+        android:text="प्रोफाइल देखिये"
+        android:textAllCaps="false"
+        android:textColor="#1B1919"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="169dp"
-        android:layout_marginLeft="169dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="169dp"
-        android:layout_marginRight="169dp"
-        android:text="Occupation"
-        android:textColor="#171515"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="174dp"
-        android:layout_marginLeft="174dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="167dp"
-        android:layout_marginRight="167dp"
-        android:text="Experience"
-        android:textColor="#090909"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogout" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

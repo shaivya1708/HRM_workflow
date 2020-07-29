@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.hrm">
 
     <application
@@ -19,6 +20,18 @@
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".VerifyPhoneActivity"/>
         <activity android:name=".RegistrationActivity"/>
+        <activity android:name=".choose_employee_employer"/>
+        <activity android:name=".Registration_employer"/>
+        <activity android:name=".Employer"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Employer_requirement"/>
+        <activity android:name=".profile"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".home"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".history"
+            tools:ignore="Instantiatable" />
+
 
     </application>
 

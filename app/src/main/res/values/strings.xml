@@ -3,7 +3,8 @@
     <string name="HRM">HRM</string>
     <string name="login">दर्ज करे</string>
     <string name="signup">शामिल करें</string>
-    <string-array name = "job_profile">
+    <string name="todo">TODO</string>
+    <string-array name="job_profile">
         <item>काम चुने</item>
         <item>राज मिस्त्री</item>
         <item>प्लम्बर</item>
@@ -13,7 +14,7 @@
         <item>पेंटर</item>
         <item>वेल्डर</item>
     </string-array>
-    <string-array name = "experience">
+    <string-array name="experience">
         <item>अनुभव</item>
         <item>नूतन</item>
         <item>1-2 साल</item>
@@ -21,9 +22,11 @@
         <item>5-10 साल</item>
         <item>10+ साल</item>
     </string-array>
-    <string-array name = "gender">
+    <string-array name="gender">
         <item>लिंग</item>
         <item>महिला</item>
         <item>पुरुष</item>
     </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

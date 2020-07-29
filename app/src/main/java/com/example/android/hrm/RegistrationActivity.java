@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class RegistrationActivity extends AppCompatActivity {
 
     Button employer, employee;
-    EditText Name, Phone,Address;
+    EditText Name, Phone;
     Spinner occ_spinner1;
     Spinner exp_spinner2;
     Spinner gen_spinner3;
@@ -24,72 +24,37 @@ public class RegistrationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity1);
-        employee = findViewById(R.id.button3);
-        employer = findViewById(R.id.button4);
-        employee.setOnClickListener(new View.OnClickListener()
-        {
+        setContentView(R.layout.signup);
+        Name = findViewById(R.id.editTextTextPersonName1);
+        Phone = findViewById(R.id.editTextPhone1);
+        occ_spinner1 = (Spinner) findViewById(R.id.spinner1);
+        exp_spinner2 = (Spinner) findViewById(R.id.spinner2);
+        gen_spinner3 = (Spinner) findViewById(R.id.spinner3);
+
+        findViewById(R.id.button5).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setContentView(R.layout.signup);
-                Name = findViewById(R.id.editTextTextPersonName1);
-                Phone = findViewById(R.id.editTextPhone1);
-                occ_spinner1= (Spinner) findViewById(R.id.spinner1);
-                exp_spinner2= (Spinner) findViewById(R.id.spinner2);
-                gen_spinner3 = (Spinner) findViewById(R.id.spinner3);
-                if(Name.getText()==null)
-                {
+
+                if (Name.getText() == null) {
                     Toast.makeText(getApplicationContext(), "नाम आवश्यक है", Toast.LENGTH_SHORT).show();
                     Name.requestFocus();
-                }
-                else if(Phone.getText()==null || Phone.getText().length()!=10)
-                {
+                } else if (Phone.getText() == null || Phone.getText().length() != 10) {
                     Toast.makeText(getApplicationContext(), "फ़ोन नंबर मान्य नहीं है", Toast.LENGTH_SHORT).show();
                     Phone.requestFocus();
-                }
-                else
-                {
+                } else {
                     occ = (occ_spinner1.getSelectedItem()).toString();
                     exp = (exp_spinner2.getSelectedItem()).toString();
-                    Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
+                    Intent i = new Intent(getApplicationContext(), ProfileActivity.class);
                     i.putExtra("Name", Name.getText().toString());
                     i.putExtra("Phone", Phone.getText().toString());
-                    i.putExtra("Occ", occ);
-                    i.putExtra("Exp", exp);
-                    startActivity(i);
-                }
-            }
-        });
-        employer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View vi) {
-                setContentView(R.layout.employer);
-                Name = findViewById(R.id.editTextTextPersonName2);
-                Phone = findViewById(R.id.editTextPhone2);
-                Address=findViewById(R.id.editTextAddress2);
-                if(Name.getText()==null)
-                {
-                    Toast.makeText(getApplicationContext(), "नाम आवश्यक है", Toast.LENGTH_SHORT).show();
-                    Name.requestFocus();
-                }
-                else if(Phone.getText()==null || Phone.getText().length()!=10)
-                {
-                    Toast.makeText(getApplicationContext(), "फ़ोन नंबर मान्य नहीं है", Toast.LENGTH_SHORT).show();
-                    Phone.requestFocus();
-                    Toast.makeText(getApplicationContext(),"कृपया अपना पता डालें", Toast.LENGTH_SHORT).show();
-                    Address.requestFocus();
-                }
-                else
-                {
-                    Intent i = new Intent(getApplicationContext(),ProfileActivity.class);
-                    i.putExtra("Name",Name.getText().toString());
-                    i.putExtra("Phone", Phone.getText().toString());
+                    i.putExtra("occ", occ);
+                    i.putExtra("exp", exp);
+                    i.putExtra("from","employee");
                     startActivity(i);
                     finish();
                 }
             }
         });
-
     }
 }
 
